@@ -7,3 +7,8 @@ Examples
 "double  spaces"      ==> "elbuod  secaps"
 
 */
+function reverseWords(str) {
+    const words = str.split(" ");
+    const revWords = words.map(word => word.split("").reverse().join(""));
+    return revWords.join(" ");
+  }
