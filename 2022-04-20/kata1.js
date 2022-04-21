@@ -10,7 +10,7 @@ For example, a tower with 3 floors looks like this:
   "*****"
 ]
 */
-
+/*
 function towerBuilder(nFloors) {
     let tower = [];
     let startStr = "*"
@@ -25,6 +25,24 @@ function towerBuilder(nFloors) {
         outputString = spacePad + currentStr + spacePad;
         tower.push(outputString);
     }
+    return tower;
+
+    
+}
+  console.log(towerBuilder(10));
+*/
+
+function towerBuilder(nFloors) {
+    let tower = [];
+    const maxChars = nFloors*2-1;
+    let spaces;
+    let stars;
+    for (let i = 0; i < nFloors; i++) {
+        stars = '*'.repeat(i*2 + 1);
+        spaces = ' '.repeat(nFloors - i - 1);
+        tower.push(spaces + stars + spaces);
+    }
+
     return tower;
 
     
