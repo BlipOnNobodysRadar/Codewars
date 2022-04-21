@@ -46,4 +46,4 @@ function towerBuilder(nFloors) {
 
     
 }
-  console.log(towerBuilder(10));
+  console.log(towerBuilder(3));
