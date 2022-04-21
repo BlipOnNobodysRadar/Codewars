@@ -34,7 +34,6 @@ function towerBuilder(nFloors) {
 
 function towerBuilder(nFloors) {
     let tower = [];
-    const maxChars = nFloors*2-1;
     let spaces;
     let stars;
     for (let i = 0; i < nFloors; i++) {
