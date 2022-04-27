@@ -10,5 +10,5 @@ Input: 145263 Output: 654321
 Input: 123456789 Output: 987654321
 */
 function descendingOrder(n){
-    //...
+    return Number(n.toString().split("").sort().reverse().join(""));
   }
