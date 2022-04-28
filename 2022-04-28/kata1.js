@@ -17,6 +17,8 @@ Requirements:
 
 eight(dividedBy(three()));
 */
+//Old solution
+/*
 function zero(operation='') {return parseInt(eval(0 + operation))}
 function one(operation='') {return parseInt(eval(1 + operation))}
 function two(operation='') {return parseInt(eval(2 + operation))}
@@ -32,4 +34,22 @@ function plus(num) { return ` + ${num}`};
 function minus(num) { return ` - ${num}`};
 function times(num) { return ` * ${num}`};
 function dividedBy(num) { return ` / ${num}`};
+*/
 
+//Revisited solution 
+
+function zero(arg) { return arg ? arg() : 0};
+function one(arg) { return arg ? arg() : 1};
+function two(arg) { return arg ? arg() : 2};
+function three(arg) { return arg ? arg() : 3};
+function four(arg) { return arg ? arg() : 4};
+function five(arg) { return arg ? arg() : 5};
+function six(arg) { return arg ? arg() : 6};
+function seven(arg) { return arg ? arg() : 7};
+function eight(arg) { return arg ? arg() : 8};
+function nine(arg) { return arg ? arg() : 9};
+
+function plus(r) { return function(l) {l + r}};
+function minus(r) { return function(l) {l - r}};
+function times(r) { return function(l) {l * r}};
+function dividedBy(r) { return function(l) {parseInt(l / r)}};
