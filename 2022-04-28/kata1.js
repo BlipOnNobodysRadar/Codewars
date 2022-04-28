@@ -38,18 +38,18 @@ function dividedBy(num) { return ` / ${num}`};
 
 //Revisited solution 
 
-function zero(arg) { return arg ? arg() : 0};
-function one(arg) { return arg ? arg() : 1};
-function two(arg) { return arg ? arg() : 2};
-function three(arg) { return arg ? arg() : 3};
-function four(arg) { return arg ? arg() : 4};
-function five(arg) { return arg ? arg() : 5};
-function six(arg) { return arg ? arg() : 6};
-function seven(arg) { return arg ? arg() : 7};
-function eight(arg) { return arg ? arg() : 8};
-function nine(arg) { return arg ? arg() : 9};
+function zero(arg) { return arg ? arg(0) : 0 };
+function one(arg) { return arg ? arg(1) : 1 };
+function two(arg) { return arg ? arg(2) : 2 };
+function three(arg) { return arg ? arg(3) : 3 };
+function four(arg) { return arg ? arg(4) : 4 };
+function five(arg) { return arg ? arg(5) : 5 };
+function six(arg) { return arg ? arg(6) : 6 };
+function seven(arg) { return arg ? arg(7) : 7 };
+function eight(arg) { return arg ? arg(8) : 8 };
+function nine(arg) { return arg ? arg(9) : 9 };
 
-function plus(r) { return function(l) {l + r}};
-function minus(r) { return function(l) {l - r}};
-function times(r) { return function(l) {l * r}};
-function dividedBy(r) { return function(l) {parseInt(l / r)}};
+function plus(r) { return function (l) { return l + r } };
+function minus(r) { return function (l) { return l - r } };
+function times(r) { return function (l) { return l * r } };
+function dividedBy(r) { return function (l) { return parseInt(l / r) } };
