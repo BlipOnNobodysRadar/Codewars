@@ -220,4 +220,4 @@ function getCount(str) {
 }
 console.log(getCount('abracadabra'));
 */
-console.log(Number.isInteger(12.0));
+//console.log(Number.isInteger(12.0));
