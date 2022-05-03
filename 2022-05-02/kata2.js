@@ -27,17 +27,13 @@ Examples:
 */
 function bouncingBall(h,  bounce,  window) {
     if(h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) return -1;
-    // falls atleast once, 1
-    // passCount = 1
-    // bounceHeight = h * bounce;
-    // each bounce passCount +=2 ,  bounceHeight *= bounce
-    // when bounceHeight < window, return passCount
     let passCount = 1;
     let bounceHeight = h * bounce;
-      while(bounceHeight >= window) {
+    while(bounceHeight > window) {
       passCount += 2;
       bounceHeight *= bounce;
     }
-    
     return passCount;
 }
+//test says conditions where the bounce is exactly equal to window height fail
+//I think the test is wrong here, but adjusted code to pass tests nonetheless
