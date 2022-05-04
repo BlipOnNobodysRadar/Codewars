@@ -12,12 +12,8 @@ a includes [0,3] ,hence the function should return true
 */
 function isAllPossibilities(x){
     const y = x.sort((a,b) => a- b);
-    console.log(y);
     for(let i = 0; i < y.length; i++) {
-        console.log(`i: ${i} y[i]: ${y[i]}`);
         if(i !== y[i]) return false;
     }
-    return true;
+    return x.length > 0;
 }
-
-console.log(isAllPossibilities([ 0, 1, 2, 3 ]));
