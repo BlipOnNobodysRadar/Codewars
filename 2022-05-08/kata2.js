@@ -23,7 +23,6 @@ function generateHashtag (str) {
     let returnStr = '#' + str
                           .split(" ")
                           .map(word => {
-                                console.log(`word: ${word}`)
                                 if(word.trim() === '') return '';
                                 word = word.trim()[0].toUpperCase() + word.trim().slice(1);
                                 return word;
