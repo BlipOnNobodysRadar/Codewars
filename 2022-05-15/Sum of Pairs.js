@@ -3,7 +3,7 @@
 // return first pair as an array
 function sumPairs(ints, s) {
     const existing = new Set()
-    for(i of ints) {
+    for(const i of ints) {
         if(existing.has(s-i)) {
             return [s - i, i]
         }
