@@ -2,12 +2,5 @@
 
 function sortArray(array) {
     const oddArr = array.filter(val => val % 2 !==0).sort((a,b) => a - b);
-    let oddIndex = 0;
-    for(let i = 0; i < array.length; i++) {
-      if(array[i] % 2 !== 0) {
-        array[i] = oddArr[oddIndex];
-        oddIndex++;
-      }
-    }
-    return array;
+    return array.map(val => val % 2 !==0 ? oddArr.shift() : val);
   }
