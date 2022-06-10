@@ -9,16 +9,17 @@ function listSquared(m, n) {
     }
   }
   return listOfSquares;
-  function getDivisors(n) {
-    let divisors = new Set();
-    for (let i = 1; i <= Math.sqrt(n); i++) {
-      if (n % i === 0) {
-        divisors.add(i);
-        divisors.add(n / i);
-      }
+}
+
+function getDivisors(n) {
+  let divisors = new Set();
+  for (let i = 1; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      divisors.add(i);
+      divisors.add(n / i);
     }
-    return Array.from(divisors);
   }
+  return Array.from(divisors);
 }
 
 console.log(Number.isInteger(Number((290.00000003).toFixed(2))));
