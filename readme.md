@@ -18,6 +18,6 @@ Optimizations may be for performance, for efficiency, or for readability.
 
 There are so many lessons I have learned from these daily challenges, but if I had to pick some of the most important ones, it's these:
 
--Every problem can be broken down into solvable steps with code.
--Growth comes best through consistent effort.
--There's always more to learn.
+- Every problem can be broken down into solvable steps with code.
+- Growth comes best through consistent effort.
+- There's always more to learn.
