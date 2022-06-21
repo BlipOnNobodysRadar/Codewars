@@ -7,7 +7,7 @@ A repository filled with codewars challenges (kata). I'm currently in the top 2%
 
 **Tech used:** ![Javascript SVG](javascriptSVG.svg)
 
-Every day, I warm up with a codewars kata.
+Every day, I warm up with a codewars kata and push the solutions here.
 
 ## Optimizations
 
