@@ -6,6 +6,7 @@ function kebabize(str) {
   const camel = filtered
     .map((c) => (c === c.toUpperCase() ? `-${c.toLowerCase()}` : c))
     .join("");
+  return camel[0] === "-" ? camel.slice(1) : camel;
 }
 
 function isAlpha(c) {
