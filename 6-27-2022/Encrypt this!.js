@@ -5,7 +5,7 @@ var encryptThis = function (text) {
   return text
     .split(" ")
     .map((w) => encryptWord(w))
-    .join("");
+    .join(" ");
 };
 
 function encryptWord(text) {
