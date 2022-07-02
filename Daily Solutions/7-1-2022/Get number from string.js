@@ -3,8 +3,10 @@
 
 function getNumberFromString(s) {
   let nums = "1234567890".split("");
-  return s
-    .split("")
-    .filter((d) => nums.includes(d))
-    .join("");
+  return Number(
+    s
+      .split("")
+      .filter((d) => nums.includes(d))
+      .join("")
+  );
 }
