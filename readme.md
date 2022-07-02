@@ -11,7 +11,7 @@ Every day, I warm up with a codewars kata and push the solutions here.
 
 ## Optimizations
 
-I enjoy finding new and better ways to solve coding challenges, and so I consistently refactor my solutions with optimized code.
+I enjoy finding new and better ways to solve coding challenges, and so I commonly refactor my solutions with optimized code.
 Optimizations may be for performance, for efficiency, or for readability.
 
 ## Lessons Learned:
