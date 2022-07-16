@@ -1,4 +1,4 @@
-// Maze Runner
+// Maze Runner (6kyu)
 // https://www.codewars.com/kata/58663693b359c4a6560001d6/train/javascript
 function mazeRunner(maze, directions) {
   const startPos = findStart(maze);
