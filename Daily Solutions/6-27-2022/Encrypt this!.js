@@ -17,3 +17,5 @@ function encryptWord(text) {
   textChange[0] = textChange[0].charCodeAt(0);
   return textChange.join("");
 }
+
+console.log(encryptThis("I'm so tired of playing dumb."));
