@@ -1,4 +1,4 @@
-// Basic Calculator
+// Basic Calculator (7kyu)
 // https://www.codewars.com/kata/5296455e4fe0cdf2e000059f/train/javascript
 
 // first solution, unsafe
