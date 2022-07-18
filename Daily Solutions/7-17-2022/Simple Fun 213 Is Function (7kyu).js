@@ -1,4 +1,4 @@
-// Simple Fun 213 Is Function (7kyu).js
+// Simple Fun 213 Is Function (7kyu)
 //https://www.codewars.com/kata/590001c24c5d02625b00005e/train/javascript
 function isFunction(pairs) {
   const removedDups = Array.from(
