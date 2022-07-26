@@ -1,6 +1,6 @@
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/BlipOnNobodysRadar" >Visit Here</a>
 
-![codewars profile picture](codewars-pf.png)
+![codewars profile picture](codewars-pf2.png)
 A repository filled with codewars challenges (kata). I'm currently in the top 1.4% of users with 445+ kata completed, and push atleast one solution every day.
 
 ## How It's Made:
