@@ -29,3 +29,9 @@ function grader(score) {
     if (grade[key]()) return key;
   }
 }
+/*
+"I prefer this pattern because its the easiest to modify. 
+Adding or removing a case can be done just by updating the object and 
+not a complex if else chain. When the object is pure data, then that means the 
+configuration can come from a service call, instead of being hard coded at all."
+"*/
