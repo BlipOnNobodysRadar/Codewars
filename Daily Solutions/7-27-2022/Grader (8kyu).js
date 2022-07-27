@@ -16,3 +16,16 @@ function grader(score) {
       return "F";
   }
 }
+
+function grader(score) {
+  const grade = {
+    F: () => score > 1 || score < 0.6,
+    A: () => score >= 0.9,
+    B: () => score >= 0.8,
+    C: () => score >= 0.7,
+    D: () => score >= 0.6,
+  };
+  for (let key in grade) {
+    if (grade[key]()) return key;
+  }
+}
