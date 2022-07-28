@@ -1,3 +1,6 @@
+// Linked Lists - Length & Count (6kyu)
+// https://www.codewars.com/kata/55beec7dd347078289000021/train/javascript
+
 function Node(data) {
   this.data = data;
   this.next = null;
