@@ -6,5 +6,5 @@ function nextItem(xs, item) {
     if (found) return x; // found set in previous iteration
     if (x == item) found = true; // executes if item found
   }
-  return found;
+  return undefined; //have to default to this in case last item is the one found.
 }
