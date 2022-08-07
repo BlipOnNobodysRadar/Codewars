@@ -11,11 +11,9 @@ function to_nato(words) {
   // join(' ') resulting array into a string, and return
 
   // Problem: this doesn't account for repeated punctuation nor beginning punctuation.
-  function to_nato(words) {
-    return words
-      .split("")
-      .filter((c) => c !== " ")
-      .map((c) => (NATO[c.toLowerCase()] ? NATO[c.toLowerCase()] : c))
-      .join(" ");
-  }
+  return words
+    .split("")
+    .filter((c) => c !== " ")
+    .map((c) => NATO[c.toLowerCase()] || c)
+    .join(" ");
 }
