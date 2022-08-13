@@ -1,5 +1,4 @@
-// 6 kyu
-// A Rule of Divisibility by 13
+// 6 kyu A Rule of Divisibility by 13
 function thirt(n) {
   const pattern = [1, 10, 9, 12, 3, 4];
   const nDigits = n
