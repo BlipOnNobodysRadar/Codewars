@@ -2,7 +2,6 @@
 // convert to string, split on ".", first entry in 2nd arr >= 5 round up
 
 Math.round = function (number) {
-  console.log(number);
   const splitStr = String(number).split(".");
   if (splitStr[1]) {
     return Number(splitStr[1][0]) >= 5 ? Math.ceil(number) : Math.floor(number);
