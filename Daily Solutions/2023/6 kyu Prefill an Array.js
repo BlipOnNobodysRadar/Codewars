@@ -1,9 +1,8 @@
 // 6 kyu Prefill an Array
 
 function prefill(n, v) {
-  if (typeof n !== "boolean") {
-    let newN = Number(n);
-  } else {
+  let newN = Number(n);
+  if (typeof n === "boolean") {
     throw new TypeError(`${n} is invalid`);
   }
   if (newN === 0) return [];
@@ -13,8 +12,13 @@ function prefill(n, v) {
   return new Array(n).fill(v);
 }
 
-console.log(prefill(3, 1));
-console.log(prefill(2, "abc"));
-console.log(prefill("1", 1));
-console.log(prefill(3, prefill(2, "2d")));
-console.log(prefill("xyz", 1));
+function prefill(n, v) {
+  if (typeof n !== "number" && typeof n !== "string") {
+    throw new TypeError(`${n} is invalid`);
+  }
+  if (!Number.isInteger(+n) || +n < 0) {
+    throw new TypeError(`${n} is invalid`);
+  }
+  if (+n === 0) return [];
+  return new Array(newN).fill(v);
+}
