@@ -11,5 +11,3 @@ function createDict(keys, values) {
   }
   return obj;
 }
-
-createDict(["a", "b", "c"], [1, 2, 3]);
